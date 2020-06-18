@@ -28,10 +28,11 @@ Partial Class edpLoginForm
 		Me.TextBox2 = New System.Windows.Forms.TextBox()
 		Me.Label_statusKoneksi = New System.Windows.Forms.Label()
 		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-		Me.Button2 = New System.Windows.Forms.Button()
-		Me.Button1 = New System.Windows.Forms.Button()
+		Me.ButtonExit = New System.Windows.Forms.Button()
+		Me.ButtonLogin = New System.Windows.Forms.Button()
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+		Me.Label_Status = New System.Windows.Forms.Label()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,25 +91,25 @@ Partial Class edpLoginForm
 		Me.PictureBox3.TabIndex = 11
 		Me.PictureBox3.TabStop = False
 		'
-		'Button2
+		'ButtonExit
 		'
-		Me.Button2.BackgroundImage = Global.EDP.My.Resources.Resources.cancel_32px
-		Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-		Me.Button2.Location = New System.Drawing.Point(165, 246)
-		Me.Button2.Name = "Button2"
-		Me.Button2.Size = New System.Drawing.Size(44, 39)
-		Me.Button2.TabIndex = 9
-		Me.Button2.UseVisualStyleBackColor = True
+		Me.ButtonExit.BackgroundImage = Global.EDP.My.Resources.Resources.cancel_32px
+		Me.ButtonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+		Me.ButtonExit.Location = New System.Drawing.Point(165, 246)
+		Me.ButtonExit.Name = "ButtonExit"
+		Me.ButtonExit.Size = New System.Drawing.Size(44, 39)
+		Me.ButtonExit.TabIndex = 9
+		Me.ButtonExit.UseVisualStyleBackColor = True
 		'
-		'Button1
+		'ButtonLogin
 		'
-		Me.Button1.BackgroundImage = Global.EDP.My.Resources.Resources.enter_32px
-		Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-		Me.Button1.Location = New System.Drawing.Point(109, 246)
-		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(46, 39)
-		Me.Button1.TabIndex = 8
-		Me.Button1.UseVisualStyleBackColor = True
+		Me.ButtonLogin.BackgroundImage = Global.EDP.My.Resources.Resources.enter_32px
+		Me.ButtonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+		Me.ButtonLogin.Location = New System.Drawing.Point(109, 246)
+		Me.ButtonLogin.Name = "ButtonLogin"
+		Me.ButtonLogin.Size = New System.Drawing.Size(46, 39)
+		Me.ButtonLogin.TabIndex = 8
+		Me.ButtonLogin.UseVisualStyleBackColor = True
 		'
 		'PictureBox2
 		'
@@ -130,15 +131,25 @@ Partial Class edpLoginForm
 		Me.PictureBox1.TabIndex = 4
 		Me.PictureBox1.TabStop = False
 		'
+		'Label_Status
+		'
+		Me.Label_Status.AutoSize = True
+		Me.Label_Status.Font = New System.Drawing.Font("Lucida Console", 6.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label_Status.Location = New System.Drawing.Point(248, 365)
+		Me.Label_Status.Name = "Label_Status"
+		Me.Label_Status.Size = New System.Drawing.Size(0, 8)
+		Me.Label_Status.TabIndex = 12
+		'
 		'edpLoginForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.Aqua
 		Me.ClientSize = New System.Drawing.Size(300, 400)
+		Me.Controls.Add(Me.Label_Status)
 		Me.Controls.Add(Me.Label_statusKoneksi)
-		Me.Controls.Add(Me.Button2)
-		Me.Controls.Add(Me.Button1)
+		Me.Controls.Add(Me.ButtonExit)
+		Me.Controls.Add(Me.ButtonLogin)
 		Me.Controls.Add(Me.TextBox2)
 		Me.Controls.Add(Me.PictureBox2)
 		Me.Controls.Add(Me.TextBox1)
@@ -165,8 +176,9 @@ Partial Class edpLoginForm
 	Friend WithEvents PictureBox1 As PictureBox
 	Friend WithEvents TextBox2 As TextBox
 	Friend WithEvents PictureBox2 As PictureBox
-	Friend WithEvents Button1 As Button
-	Friend WithEvents Button2 As Button
+	Friend WithEvents ButtonLogin As Button
+	Friend WithEvents ButtonExit As Button
 	Public WithEvents Label_statusKoneksi As Label
 	Friend WithEvents PictureBox3 As PictureBox
+	Public WithEvents Label_Status As Label
 End Class
