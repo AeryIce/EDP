@@ -27,15 +27,15 @@ Partial Class edpLoginForm
 		Me.TextBoxuserName = New System.Windows.Forms.TextBox()
 		Me.TextBoxpassWord = New System.Windows.Forms.TextBox()
 		Me.Label_statusKoneksi = New System.Windows.Forms.Label()
-		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+		Me.Label_Status = New System.Windows.Forms.Label()
 		Me.ButtonExit = New System.Windows.Forms.Button()
 		Me.ButtonLogin = New System.Windows.Forms.Button()
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-		Me.Label_Status = New System.Windows.Forms.Label()
-		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'Label1
@@ -86,20 +86,20 @@ Partial Class edpLoginForm
 		Me.Label_statusKoneksi.Size = New System.Drawing.Size(0, 9)
 		Me.Label_statusKoneksi.TabIndex = 10
 		'
-		'PictureBox3
+		'Label_Status
 		'
-		Me.PictureBox3.BackgroundImage = Global.EDP.My.Resources.Resources._732c2664fba77085839be9be4e80e4aa
-		Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-		Me.PictureBox3.Location = New System.Drawing.Point(-1, 12)
-		Me.PictureBox3.Name = "PictureBox3"
-		Me.PictureBox3.Size = New System.Drawing.Size(300, 375)
-		Me.PictureBox3.TabIndex = 11
-		Me.PictureBox3.TabStop = False
+		Me.Label_Status.AutoSize = True
+		Me.Label_Status.Font = New System.Drawing.Font("Lucida Console", 6.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label_Status.Location = New System.Drawing.Point(248, 365)
+		Me.Label_Status.Name = "Label_Status"
+		Me.Label_Status.Size = New System.Drawing.Size(0, 8)
+		Me.Label_Status.TabIndex = 12
 		'
 		'ButtonExit
 		'
 		Me.ButtonExit.BackgroundImage = Global.EDP.My.Resources.Resources.cancel_32px
 		Me.ButtonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+		Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.ButtonExit.Location = New System.Drawing.Point(165, 246)
 		Me.ButtonExit.Name = "ButtonExit"
 		Me.ButtonExit.Size = New System.Drawing.Size(44, 39)
@@ -108,9 +108,10 @@ Partial Class edpLoginForm
 		'
 		'ButtonLogin
 		'
-		Me.ButtonLogin.BackgroundImage = Global.EDP.My.Resources.Resources.enter_32px
+		Me.ButtonLogin.BackgroundImage = Global.EDP.My.Resources.Resources.login_32px
 		Me.ButtonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-		Me.ButtonLogin.ForeColor = System.Drawing.SystemColors.HighlightText
+		Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.ButtonLogin.ForeColor = System.Drawing.SystemColors.ControlText
 		Me.ButtonLogin.Location = New System.Drawing.Point(109, 246)
 		Me.ButtonLogin.Name = "ButtonLogin"
 		Me.ButtonLogin.Size = New System.Drawing.Size(46, 39)
@@ -137,20 +138,21 @@ Partial Class edpLoginForm
 		Me.PictureBox1.TabIndex = 4
 		Me.PictureBox1.TabStop = False
 		'
-		'Label_Status
+		'PictureBox3
 		'
-		Me.Label_Status.AutoSize = True
-		Me.Label_Status.Font = New System.Drawing.Font("Lucida Console", 6.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label_Status.Location = New System.Drawing.Point(248, 365)
-		Me.Label_Status.Name = "Label_Status"
-		Me.Label_Status.Size = New System.Drawing.Size(0, 8)
-		Me.Label_Status.TabIndex = 12
+		Me.PictureBox3.BackgroundImage = Global.EDP.My.Resources.Resources._732c2664fba77085839be9be4e80e4aa
+		Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+		Me.PictureBox3.Location = New System.Drawing.Point(-1, 12)
+		Me.PictureBox3.Name = "PictureBox3"
+		Me.PictureBox3.Size = New System.Drawing.Size(300, 375)
+		Me.PictureBox3.TabIndex = 11
+		Me.PictureBox3.TabStop = False
 		'
 		'edpLoginForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.BackColor = System.Drawing.Color.RoyalBlue
+		Me.BackColor = System.Drawing.Color.Aqua
 		Me.ClientSize = New System.Drawing.Size(300, 400)
 		Me.Controls.Add(Me.Label_Status)
 		Me.Controls.Add(Me.Label_statusKoneksi)
@@ -168,9 +170,9 @@ Partial Class edpLoginForm
 		Me.Opacity = 0.85R
 		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
 		Me.Text = "Login"
-		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 

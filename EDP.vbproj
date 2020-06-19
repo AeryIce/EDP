@@ -121,6 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="edpHomeForm.resx">
+      <DependentUpon>edpHomeForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="edpLoginForm.resx">
       <DependentUpon>edpLoginForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\732c2664fba77085839be9be4e80e4aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

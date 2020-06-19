@@ -34,7 +34,9 @@ Public Class edpLoginForm
 					Me.Show()
 					TextBoxpassWord.Focus()
 				End If
-			Else
+			End If
+
+		Else
 				Call KoneksiINV()
 				Cmd = New SqlCommand("SELECT * FROM inv_user WHERE [user] = '" & TextBoxuserName.Text & "' AND [password] = '" & TextBoxpassWord.Text & "' ", Conn)
 				Dr = Cmd.ExecuteReader()
@@ -56,7 +58,7 @@ Public Class edpLoginForm
 			End If
 
 
-		End If
+
 
 	End Sub
 
