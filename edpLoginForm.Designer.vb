@@ -22,43 +22,19 @@ Partial Class edpLoginForm
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
-		Me.Label1 = New System.Windows.Forms.Label()
-		Me.Label2 = New System.Windows.Forms.Label()
 		Me.TextBoxuserName = New System.Windows.Forms.TextBox()
 		Me.TextBoxpassWord = New System.Windows.Forms.TextBox()
 		Me.Label_statusKoneksi = New System.Windows.Forms.Label()
 		Me.Label_Status = New System.Windows.Forms.Label()
+		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
 		Me.ButtonExit = New System.Windows.Forms.Button()
 		Me.ButtonLogin = New System.Windows.Forms.Button()
-		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+		Me.PictureBoxpassWord = New System.Windows.Forms.PictureBox()
+		Me.PictureBoxuserName = New System.Windows.Forms.PictureBox()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBoxpassWord, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBoxuserName, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
-		'
-		'Label1
-		'
-		Me.Label1.AutoSize = True
-		Me.Label1.Font = New System.Drawing.Font("Arial Unicode MS", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-		Me.Label1.Location = New System.Drawing.Point(50, 96)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(205, 28)
-		Me.Label1.TabIndex = 0
-		Me.Label1.Text = "Periplus Indonesia"
-		'
-		'Label2
-		'
-		Me.Label2.AutoSize = True
-		Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-		Me.Label2.Location = New System.Drawing.Point(75, 124)
-		Me.Label2.Name = "Label2"
-		Me.Label2.Size = New System.Drawing.Size(150, 13)
-		Me.Label2.TabIndex = 1
-		Me.Label2.Text = "JKT - BDG - BALI - SBY - JGJ "
 		'
 		'TextBoxuserName
 		'
@@ -95,6 +71,16 @@ Partial Class edpLoginForm
 		Me.Label_Status.Size = New System.Drawing.Size(0, 8)
 		Me.Label_Status.TabIndex = 12
 		'
+		'PictureBox3
+		'
+		Me.PictureBox3.BackgroundImage = Global.EDP.My.Resources.Resources.Logo_Periplus_Dasar_Puth
+		Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+		Me.PictureBox3.Location = New System.Drawing.Point(57, 63)
+		Me.PictureBox3.Name = "PictureBox3"
+		Me.PictureBox3.Size = New System.Drawing.Size(204, 68)
+		Me.PictureBox3.TabIndex = 13
+		Me.PictureBox3.TabStop = False
+		'
 		'ButtonExit
 		'
 		Me.ButtonExit.BackgroundImage = Global.EDP.My.Resources.Resources.cancel_32px
@@ -118,35 +104,25 @@ Partial Class edpLoginForm
 		Me.ButtonLogin.TabIndex = 8
 		Me.ButtonLogin.UseVisualStyleBackColor = True
 		'
-		'PictureBox2
+		'PictureBoxpassWord
 		'
-		Me.PictureBox2.BackgroundImage = Global.EDP.My.Resources.Resources.password_32px
-		Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-		Me.PictureBox2.Location = New System.Drawing.Point(61, 208)
-		Me.PictureBox2.Name = "PictureBox2"
-		Me.PictureBox2.Size = New System.Drawing.Size(33, 32)
-		Me.PictureBox2.TabIndex = 6
-		Me.PictureBox2.TabStop = False
+		Me.PictureBoxpassWord.BackgroundImage = Global.EDP.My.Resources.Resources.password_32px
+		Me.PictureBoxpassWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+		Me.PictureBoxpassWord.Location = New System.Drawing.Point(61, 208)
+		Me.PictureBoxpassWord.Name = "PictureBoxpassWord"
+		Me.PictureBoxpassWord.Size = New System.Drawing.Size(33, 32)
+		Me.PictureBoxpassWord.TabIndex = 6
+		Me.PictureBoxpassWord.TabStop = False
 		'
-		'PictureBox1
+		'PictureBoxuserName
 		'
-		Me.PictureBox1.BackgroundImage = Global.EDP.My.Resources.Resources.user_32px
-		Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-		Me.PictureBox1.Location = New System.Drawing.Point(61, 166)
-		Me.PictureBox1.Name = "PictureBox1"
-		Me.PictureBox1.Size = New System.Drawing.Size(33, 32)
-		Me.PictureBox1.TabIndex = 4
-		Me.PictureBox1.TabStop = False
-		'
-		'PictureBox3
-		'
-		Me.PictureBox3.BackgroundImage = Global.EDP.My.Resources.Resources._732c2664fba77085839be9be4e80e4aa
-		Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-		Me.PictureBox3.Location = New System.Drawing.Point(-1, 12)
-		Me.PictureBox3.Name = "PictureBox3"
-		Me.PictureBox3.Size = New System.Drawing.Size(300, 375)
-		Me.PictureBox3.TabIndex = 11
-		Me.PictureBox3.TabStop = False
+		Me.PictureBoxuserName.BackgroundImage = Global.EDP.My.Resources.Resources.user_32px
+		Me.PictureBoxuserName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+		Me.PictureBoxuserName.Location = New System.Drawing.Point(61, 166)
+		Me.PictureBoxuserName.Name = "PictureBoxuserName"
+		Me.PictureBoxuserName.Size = New System.Drawing.Size(33, 32)
+		Me.PictureBoxuserName.TabIndex = 4
+		Me.PictureBoxuserName.TabStop = False
 		'
 		'edpLoginForm
 		'
@@ -154,39 +130,34 @@ Partial Class edpLoginForm
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.Aqua
 		Me.ClientSize = New System.Drawing.Size(300, 400)
+		Me.Controls.Add(Me.PictureBox3)
 		Me.Controls.Add(Me.Label_Status)
 		Me.Controls.Add(Me.Label_statusKoneksi)
 		Me.Controls.Add(Me.ButtonExit)
 		Me.Controls.Add(Me.ButtonLogin)
 		Me.Controls.Add(Me.TextBoxpassWord)
-		Me.Controls.Add(Me.PictureBox2)
+		Me.Controls.Add(Me.PictureBoxpassWord)
 		Me.Controls.Add(Me.TextBoxuserName)
-		Me.Controls.Add(Me.PictureBox1)
-		Me.Controls.Add(Me.Label2)
-		Me.Controls.Add(Me.Label1)
-		Me.Controls.Add(Me.PictureBox3)
+		Me.Controls.Add(Me.PictureBoxuserName)
 		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
 		Me.Name = "edpLoginForm"
 		Me.Opacity = 0.85R
 		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
 		Me.Text = "Login"
-		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBoxpassWord, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBoxuserName, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 
 	End Sub
-
-	Friend WithEvents Label1 As Label
-	Friend WithEvents Label2 As Label
 	Friend WithEvents TextBoxuserName As TextBox
-	Friend WithEvents PictureBox1 As PictureBox
+	Friend WithEvents PictureBoxuserName As PictureBox
 	Friend WithEvents TextBoxpassWord As TextBox
-	Friend WithEvents PictureBox2 As PictureBox
+	Friend WithEvents PictureBoxpassWord As PictureBox
 	Friend WithEvents ButtonLogin As Button
 	Friend WithEvents ButtonExit As Button
 	Public WithEvents Label_statusKoneksi As Label
-	Friend WithEvents PictureBox3 As PictureBox
 	Public WithEvents Label_Status As Label
+	Friend WithEvents PictureBox3 As PictureBox
 End Class
