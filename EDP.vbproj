@@ -186,5 +186,8 @@
   <ItemGroup>
     <None Include="Resources\Logo Periplus Dasar Puth.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner Periplus.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
