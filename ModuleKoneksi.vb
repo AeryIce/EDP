@@ -10,7 +10,7 @@ Module ModuleKoneksi
 
 	Sub KoneksiINV()
 		Try
-			Conn = New SqlConnection("Data Source =AERYICE-PC666\SQLEXPRESS; Initial Catalog = INV ; Integrated Security = true")
+			Conn = New SqlConnection("Data Source =AERYICE-PC666\SQLEXPRESS2012; Initial Catalog = INV ; Integrated Security = true")
 			Conn.Open()
 			edpLoginForm.Label_Status.Text = "Connected"
 		Catch ex As Exception
